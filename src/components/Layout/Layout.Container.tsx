@@ -356,6 +356,20 @@ const MobileHamburger = styled.button`
     display: none;
     visibility: hidden;
   `}
+  	${media.desktop`
+    display: none;
+    visibility: hidden;
+	`}
+
+	${media.tablet`
+    display: block;
+    visibility: visible;
+	`}
+	${media.phone`
+    display: block;
+    visibility: visible;
+	`}
+
 
   @media screen and (min-height: 800px) {
     top: 48px;
