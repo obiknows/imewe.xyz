@@ -21,13 +21,21 @@ export function calculateStyles(position: number): {} {
   return width > breakpoint || position <= 0 ? {} : styles
 }
 
-function LayoutHeroMobile({ children }) {
+function LayoutHeroMobile({
+  children,
+  background,
+}: {
+  children: any
+  background?: string
+}) {
   const position = clamp(useScrollPosition(), 0, 1000)
 
   return (
     <>
       <Spacer />
-      <Frame style={calculateStyles(position)}>{children}</Frame>
+      <Frame background={background} style={calculateStyles(position)}>
+        {children}
+      </Frame>
     </>
   )
 }
@@ -40,8 +48,8 @@ const Spacer = styled.div`
   `}
 `
 
-const Frame = styled.div`
-  background: #08070b;
+const Frame = styled.div<{ background?: string }>`
+  background: ${p => p.background || `#08070b`};
 
   ${media.tablet`
     height: 100vh;

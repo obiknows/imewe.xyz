@@ -13,7 +13,6 @@ import store from '@store'
 import shortcuts from '@shortcuts'
 
 interface LayoutProps {
-  background?: string
   nav: {
     fixed?: boolean
     offset?: boolean

@@ -110,8 +110,7 @@ function NovealPage({ data, location }) {
           image={contentful.seo.image.file.url}
           pathname={location.pathname}
         />
-
-        <LayoutHeroMobile>
+        <LayoutHeroMobile background="transparent">
           <Section style={{ position: 'relative' }} narrow>
             <Controls isMobile={dimension === 361}>
               <div>
