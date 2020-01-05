@@ -175,13 +175,13 @@ const ContactByEmail = ({ animation, delay }) => (
     <ContactWithEmail animation={animation} delay={delay}>
       <ContactWithEmailText>
         <CopyToClipboard
-          copyOnClick="contact@narative.co"
+          copyOnClick="careers@narative.co"
           iconFill="rgba(0,0,0,0.3)"
         >
-          Prefer to send us an email instead?{' '}
+          Looking to be part of Narative? Say hello at{' '}
           <button>
-            contact@narative.co{' '}
-            <Hidden>Copy contact@narative.co go clipboard.</Hidden>
+            careers@narative.co{' '}
+            <Hidden>Copy careers@narative.co go clipboard.</Hidden>
           </button>
         </CopyToClipboard>
       </ContactWithEmailText>
@@ -191,7 +191,8 @@ const ContactByEmail = ({ animation, delay }) => (
       animation={animation}
       delay={delay}
     >
-      Prefer to send us an email instead? <span>contact@narative.co</span>
+      Looking to be part of Narative? <br />
+      Say hello at <span>careers@narative.co</span>
     </MobileContactWithEmail>
   </>
 )
@@ -253,6 +254,7 @@ const MobileContactWithEmail = styled.a`
   text-align: center;
   color: rgba(0, 0, 0, 0.33);
   margin-top: 40px;
+  font-size: 18px;
   ${fadeUpAnimation}
 
   ${media.tablet`
@@ -260,7 +262,6 @@ const MobileContactWithEmail = styled.a`
   `};
 
   span {
-    text-decoration: underline;
     font-weight: 600;
   }
 `
