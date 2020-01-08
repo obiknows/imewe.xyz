@@ -42,7 +42,6 @@ class Text extends Component {
             id={field.name}
             {...field}
             {...rest}
-            autoFocus={false}
           />
           <LabelAnimation hasValue={field.value}>
             <StyledLabel hasError={hasError} htmlFor={field.name}>

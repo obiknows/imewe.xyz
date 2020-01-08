@@ -45,6 +45,8 @@ module.exports.HTMLRendererOpts = {
       if (!node.data.target.fields) return null
 
       let {
+        code,
+        language,
         align,
         showDescription,
         withShadow,
@@ -54,9 +56,26 @@ module.exports.HTMLRendererOpts = {
       } = node.data.target.fields
       const contentfulId = node.data.target.sys.contentType.sys.id
 
+      // This has to be strangely formatted like this to avoid whitespace. I know... I know
+      if (code && contentfulId === 'code') {
+        return `
+
+\`\`\`${language}
+${code}
+\`\`\`
+
+`
+      }
+
       if (id && id.en && contentfulId === 'embed') {
         return `
           <twitter twitterId="${id.en}"></twitter>
+        `
+      }
+
+      if (id && contentfulId === 'embed') {
+        return `
+          <twitter twitterId="${id}"></twitter>
         `
       }
 

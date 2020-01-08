@@ -54,6 +54,16 @@ function ArticelShare({ article, mode }: MenuFloatProps) {
 
         if (!article) return
 
+        const codeBlocks = Array.from(
+          article.getElementsByClassName('prism-code')
+        )
+
+        const isHighlightedInCodeBlock = codeBlocks.some(block =>
+          window.getSelection().containsNode(block, true)
+        )
+
+        if (isHighlightedInCodeBlock) return
+
         const articleBox = article.getBoundingClientRect() as DOMRect
 
         const { width, height } = getSelectionDimensions()

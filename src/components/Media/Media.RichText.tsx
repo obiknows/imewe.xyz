@@ -1,15 +1,17 @@
 import React, { useEffect, useContext } from 'react'
-import ReactHtmlParser from 'react-html-parser'
+import ReactMarkdown from 'react-markdown/with-html'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
+import ReactHtmlParser from 'react-html-parser'
 import styled, { css } from 'styled-components'
 import { ContactContext } from '@components/Contact/Contact.Context'
+import Code from '@components/Code/Code'
 
 import media from '@styles/media'
 
 import { IRichText } from '@typings'
 
 // Specifically handling Twitter embeds that get passed from our htmls htmlRenderer
-function handleTransform(node) {
+function transform(node) {
   if (node.name === 'twitter' && node.attribs.twitterid) {
     return (
       <TwitterTweetEmbed
@@ -58,12 +60,17 @@ function RichText({
   children,
   ...props
 }: React.SFC<IRichText>) {
-  const html = ReactHtmlParser(content, { handleTransform })
   handleContactUs()
-
+  console.log(content)
   return (
     <Content ref={contentRef} {...props}>
-      {html}
+      <ReactMarkdown
+        source={content}
+        escapeHtml={false}
+        renderers={{
+          code: Code,
+        }}
+      />
       {children}
     </Content>
   )
@@ -247,13 +254,150 @@ const highlight = css`
   }
 `
 
+const prismStyles = {
+  token: `#fff`,
+  languageJavascript: `#e8696b`,
+  javascript: `#e8696b`,
+  background: `#292c34`,
+  comment: `#5e6a76`,
+  string: `#a8e2a8`,
+  var: `#b3bac5`,
+  number: `#e4854d`,
+  constant: `#b3bac5`,
+  plain: `#fff`,
+  doctype: `#e8696b`,
+  tag: `#e8696b`,
+  keyword: `#d49fd4`,
+  boolean: `#ff5874`,
+  function: `#5F8DC3`,
+  parameter: `#F9965D`,
+  className: `#ffcf74`,
+  attrName: `#bf87ba`,
+  attrValue: `#a8e2a8`,
+  interpolation: `#fff`,
+  punctuation: `#5FA8AA`,
+  ['maybe-class-name']: `#fff`,
+  property: `#80cbc4`,
+  propertyAccess: `#fff`,
+  namespace: `#b2ccd6`,
+  highlight: `rgba(255,255,255,0.07)`,
+  highlightBorder: `#e1bde2`,
+  dom: `#5F8DC3`,
+  operator: `#5FA8AA`,
+}
+
+function toKebabCase(str: string): string {
+  return str
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map(x => x.toLowerCase())
+    .join('-')
+}
+
+const PrismCSS = css`
+  .language-shell {
+    .token-line {
+      line-height: 2;
+    }
+  }
+
+  .prism-code {
+    overflow: auto;
+    width: 100%;
+    max-width: 744px;
+    margin: 0 auto;
+    padding: 32px;
+    font-size: 13px;
+    margin: 15px auto 50px;
+    border-radius: 5px;
+    font-family: 'Operator Mono', Consolas, Menlo, Monaco, source-code-pro,
+      'Courier New', monospace;
+
+    background: ${prismStyles.background};
+
+    .token-line {
+      border-left: 3px solid transparent;
+
+      ${Object.keys(prismStyles)
+        .map(key => {
+          return `.${toKebabCase(key)}{color:${prismStyles[key]};}`
+        })
+        .reduce((curr, next) => curr + next, ``)};
+
+      & > span {
+      }
+    }
+
+    .number-line {
+      display: inline-block;
+      width: 32px;
+      user-select: none;
+      opacity: 0.3;
+      color: #dcd9e6;
+
+      ${media.tablet`
+        opacity: 0;
+        width: 0;
+      `};
+    }
+
+    .token-line.highlight-line {
+      margin: 0 -32px;
+      padding: 0 32px;
+      background: ${p => prismStyles.highlight};
+      border-left: 3px solid ${p => prismStyles.highlightBorder};
+
+      ${media.tablet`
+        margin: 0 -20px;
+        padding: 0 20px;
+      `};
+    }
+
+    .operator + .maybe-class-name {
+      color: #ffcf74 !important;
+    }
+
+    .plain ~ .operator {
+      color: #5fa8aa !important;
+    }
+
+    ${media.desktop`
+      left: -26px;
+    `};
+
+    ${media.tablet`
+      max-width: 526px;
+      padding: 20px 20px;
+      left: 0;
+    `};
+
+    ${media.phablet`
+      text-size-adjust: none;
+      border-radius: 0;
+      margin: 0 auto 25px;
+      padding: 25px 20px;
+      overflow: initial;
+      width: unset;
+      max-width: unset;
+      float: left;
+      min-width: 100%;
+      overflow: initial;
+      position: relative;
+    `};
+  }
+`
+
 const Content = styled.article`
   position: relative;
   ${selectionColor}
 
+  p:empty {
+    display: none;
+  }
+
   /* Custom Components form Contentful */
   ${callToAction}
   ${highlight}
+  ${PrismCSS}
 
   h1,
   h2,
