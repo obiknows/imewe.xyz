@@ -60,8 +60,8 @@ module.exports.HTMLRendererOpts = {
       if (code && contentfulId === 'code') {
         return `
 
-\`\`\`${language}
-${code}
+\`\`\`${language.en}
+${code.en}
 \`\`\`
 
 `
@@ -70,12 +70,6 @@ ${code}
       if (id && id.en && contentfulId === 'embed') {
         return `
           <twitter twitterId="${id.en}"></twitter>
-        `
-      }
-
-      if (id && contentfulId === 'embed') {
-        return `
-          <twitter twitterId="${id}"></twitter>
         `
       }
 

@@ -78,7 +78,6 @@ interface CodeProps {
 }
 
 const Code: React.FC<CodeProps> = props => {
-  console.log(props)
   if (!props.language) {
     const html = ReactHtmlParser(props.value, { transform })
     return html

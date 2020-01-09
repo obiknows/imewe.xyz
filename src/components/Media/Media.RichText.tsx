@@ -61,7 +61,7 @@ function RichText({
   ...props
 }: React.SFC<IRichText>) {
   handleContactUs()
-  console.log(content)
+
   return (
     <Content ref={contentRef} {...props}>
       <ReactMarkdown
