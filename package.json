@@ -31,7 +31,7 @@
     "@weknow/gatsby-remark-twitter": "^0.2.3",
     "babel-plugin-styled-components": "^1.10.0",
     "body-scroll-lock": "^2.6.4",
-    "formik": "^0.11.11",
+    "formik": "^2.1.2",
     "framer-motion": "^1.6.12",
     "fuse.js": "^3.4.4",
     "gatsby": "^2.18.7",
