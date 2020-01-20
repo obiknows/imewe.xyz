@@ -54,7 +54,7 @@
     "gatsby-source-contentful": "^2.0.21",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-remark": "^2.6.45",
-    "gatsby-transformer-sharp": "^2.3.7",
+    "gatsby-transformer-sharp": "^2.3.13",
     "http-proxy-middleware": "^0.19.1",
     "intersection-observer": "^0.7.0",
     "kute.js": "^1.6.6",
