@@ -119,7 +119,7 @@ function AboueValues() {
     {
       heading: 'Be creative',
       text:
-        'Push beyond best practices and by-the-numbers design to discover valuable new ideas',
+        'Push beyond best practices and by-the-numbers design to discover valuable new ideas.',
       illullstration: creative.childImageSharp.fluid,
     },
     {
