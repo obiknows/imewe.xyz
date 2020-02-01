@@ -38,7 +38,7 @@ function IndexPage({ data, location }) {
         <HomeHero />
         <HomeAbout />
         <HomeServices />
-        <HomeTestimonial />
+        {/* <HomeTestimonial /> */}
         <HomeContact />
       </>
     </Layout>
