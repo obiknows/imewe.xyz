@@ -1,10 +1,10 @@
 {
-  "name": "narative.co",
-  "description": "Narative's website",
+  "name": "imewe.xyz",
+  "description": "IMEWE's site - forked from Narative's website",
   "version": "1.0.0",
-  "author": "Narative Engineer <engineering@narative.co>",
   "keywords": [
-    "narative",
+    "imewe",
+    "xyz",
     "website"
   ],
   "scripts": {
