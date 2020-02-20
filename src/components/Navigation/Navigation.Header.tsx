@@ -359,7 +359,7 @@ const NavContainer = styled.div`
   `};
 
   @media screen and (max-height: 800px) {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 `
 
