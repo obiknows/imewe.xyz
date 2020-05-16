@@ -64,16 +64,16 @@ function AboutPage({ location }) {
 
       <AboutHero />
       <TeamGradient>
-        <AboutTeam />
+        {/* <AboutTeam /> */}
         <Divider />
       </TeamGradient>
       <MiddleGradient>
-        <AboutValues />
+        {/* <AboutValues /> */}
+        <AboutPhotographs />
       </MiddleGradient>
       <BottomGradient>
-        <AboutPhotographs />
         <AboutTestimonial />
-        <AboutStudioLabs />
+        {/* <AboutStudioLabs /> */}
         <AboutContact />
       </BottomGradient>
     </Layout>
