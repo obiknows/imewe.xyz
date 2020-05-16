@@ -55,6 +55,8 @@ const HomeHeroContainer = styled.div`
   ${media.desktop`
     #mirror-mask {
       display: none;
+
+    margin-top: 50px;
   `}
 `
 
