@@ -181,7 +181,7 @@ function AboutPhotographs() {
                     text={`<span class="${textClass}">Narative is a remote team, meaning we’re used to working together from often very far apart. We stay close through constant, transparent communication, both within our team and with each of our clients. And when it matters most, we make sure to all get together.</span>`}
                   />
                   <Spacer />
-                  <ImageGrid style={{ transform: `scale(${firstRowScale})` }}>
+                  {/* <ImageGrid style={{ transform: `scale(${firstRowScale})` }}>
                     <div ref={ref}>
                       <Images ref={rowOneRef}>
                         <ImageWrapper>
@@ -229,9 +229,9 @@ function AboutPhotographs() {
                         </ImagesReverse>
                       </animated.div>
                     </div>
-                  </ImageGrid>
+                  </ImageGrid> */}
                 </LightSection>
-                <ImageGrid ref={imageGridRef}>
+                {/* <ImageGrid ref={imageGridRef}>
                   <animated.div style={rowThreeStyles}>
                     <Images ref={rowThreeRef}>
                       <ImageWrapper>
@@ -278,7 +278,7 @@ function AboutPhotographs() {
                       </ImageWrapper>
                     </ImagesReverse>
                   </animated.div>
-                </ImageGrid>
+                </ImageGrid> */}
               </ImageSection>
             )
           }}
