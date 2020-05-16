@@ -15,7 +15,7 @@ import shortcuts, { constants, keyToSymbol } from '@shortcuts'
 const navLinks = [
   { to: '/about', text: 'About' },
   { to: '/labs', text: 'Labs' },
-  { to: '/articles', text: 'Articles' },
+  // { to: '/articles', text: 'Articles' },
   { to: '/contact', text: 'Contact' },
 ]
 
