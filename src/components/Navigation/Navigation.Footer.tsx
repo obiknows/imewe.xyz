@@ -14,7 +14,7 @@ const footerLinks = [
   { to: '/', text: 'Home', mobileOnly: true },
   { to: '/about', text: 'About' },
   { to: '/labs', text: 'Labs' },
-  { to: '/articles', text: 'Articles' },
+  // { to: '/articles', text: 'Articles' },
   { to: '/contact', text: 'Contact' },
 ]
 
