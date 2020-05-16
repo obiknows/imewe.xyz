@@ -61,9 +61,9 @@ function AboutHero() {
                     <div />
                   </LeftContainer>
                   <ImageContainer desktop>
-                    <HeroImageTop>
+                    {/* <HeroImageTop>
                       <Image src={heroTop.childImageSharp.fluid} />
-                    </HeroImageTop>
+                    </HeroImageTop> */}
                     <HeroImageBottom start={animateBulb}>
                       <Image
                         onLoad={() => setBulbAnimation(true)}
@@ -228,6 +228,7 @@ const float = keyframes`
 const HeroImageBottom = styled.div<{ start: boolean }>`
   max-width: 381.46px;
   margin: 0 auto;
+  margin-top: 50px;
   transform: translateY(${p => (p.start ? '0' : '60px')});
   transition: transform 1.4s var(--ease-in-out-cubic);
 
