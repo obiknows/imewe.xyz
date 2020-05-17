@@ -150,10 +150,6 @@ class Article extends Component<ArticleProps, PostState> {
         <Gradient>
           <Meta>
             <div>Posted on {article.publicationDate}</div>
-            <div>
-              {/* By {author.name} */}
-              {/* {author.title && ` , ${author.title}`} */}
-            </div>
           </Meta>
           <NextArticle narrow>
             <FooterNext>Next article from Narative</FooterNext>
