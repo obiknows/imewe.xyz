@@ -97,7 +97,7 @@ const Microdata = ({
             "dateModified": "${isoDateStrUpdated}",
             "author": {
               "@type": "Person",
-              "name": "${author ? author.name : 'Narative Editors'}"
+              "name": "Narative Editors"
             },
             "publisher": {
               "@type": "Organization",
