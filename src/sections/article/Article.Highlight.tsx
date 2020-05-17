@@ -30,7 +30,7 @@ function ArticleHighlight({ article, mode }: MenuFloatProps) {
     show: false,
   })
 
-  const share = generateShare(text, author.name, shortUrl)
+  const share = generateShare(text, 'IMEWE Authors', shortUrl)
 
   useEffect(() => {
     const highlights: Element[] = Array.from(
@@ -49,7 +49,7 @@ function ArticleHighlight({ article, mode }: MenuFloatProps) {
         const otherCharactersInTweet = ' —  ' // 3 spaces, 1 emdash
         const url = `ntve.co/${shortUrl}`
         const tweet =
-          highlight.innerText + author.name + url + otherCharactersInTweet
+          highlight.innerText + 'Imewe Authors' + url + otherCharactersInTweet
 
         setText(highlight.innerText)
         setCanTweet(tweet.length <= tweetLimit)

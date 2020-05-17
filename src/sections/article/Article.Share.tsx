@@ -36,7 +36,7 @@ function ArticelShare({ article, mode }: MenuFloatProps) {
     show: false,
   })
 
-  const share = generateShare(text, author.name, shortUrl)
+  const share = generateShare(text, 'Imewe Authors', shortUrl)
 
   useEffect(() => {
     const events: string[] = ['keydown', 'keyup', 'mouseup', 'resize']
@@ -132,7 +132,7 @@ function ArticelShare({ article, mode }: MenuFloatProps) {
     const tweetLimit = 280
     const otherCharactersInTweet = '""—  ' // 2 quotes, 1 emdash, 2 spaces
     const url = `ntve.co/${shortUrl}`
-    const tweet = text + author.name + url + otherCharactersInTweet
+    const tweet = text + 'IMEWE Authors' + url + otherCharactersInTweet
 
     setCanTweet(tweet.length <= tweetLimit)
   }, [text])
