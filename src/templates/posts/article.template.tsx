@@ -152,7 +152,7 @@ class Article extends Component<ArticleProps, PostState> {
             <div>Posted on {article.publicationDate}</div>
             <div>
               {/* By {author.name} */}
-              {author.title && ` , ${author.title}`}
+              {/* {author.title && ` , ${author.title}`} */}
             </div>
           </Meta>
           <NextArticle narrow>
