@@ -146,7 +146,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
                     isSubmitting={props.isSubmitting}
                     color="black"
                     type="submit"
-                    text="Send to narative"
+                    text="Send"
                   />
                 </ButtonContainer>
                 <MobileButtonContainer
@@ -155,7 +155,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
                 >
                   <Button
                     isSubmitting={props.isSubmitting}
-                    text="Send to narative"
+                    text="Send"
                   />
                 </MobileButtonContainer>
                 <ContactByEmail animation={animation} delay={baseDelay + 610} />
@@ -180,7 +180,7 @@ const ContactByEmail = ({ animation, delay }) => (
         >
           Looking to be part of Digital Real Estate? Say hello at{' '}
           <button>
-            careers@narative.co{' '}
+            info@digitalrealestate.co{' '}
             <Hidden>Copy info@digitalrealestate.co go clipboard.</Hidden>
           </button>
         </CopyToClipboard>
