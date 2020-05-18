@@ -66,11 +66,40 @@ function LabsPage({ data, location }) {
             <LinkToProduct
               target="_blank"
               data-a11y="false"
-              href="https://feyapp.com"
+              href="https://odee.bigcartel.com"
             >
               <GlobeIcon aria-hidden="true" />
               Visit website
             </LinkToProduct>
+          </div>
+        </>
+      ),
+    },
+    {
+      logo: FeyLogo,
+      background: feyBackground.childImageSharp.fluid,
+      backgroundColor: '#16171C',
+      excerpt:
+        'Sick of tracking your trades across Evernote, Excel files and countless screenshots? Fey gives you the complete picture of your portfolio, with fast data entry, always-on risk analysis and more.',
+      children: (
+        <>
+          <HorizontalRule />
+          <div>
+            <LinkToProduct
+              target="_blank"
+              data-a11y="false"
+              href="https://oursoulagenda.com"
+            >
+              <GlobeIcon aria-hidden="true" />
+              Visit website
+            </LinkToProduct>
+            {/* <LinkToProduct
+              target="_blank"
+              data-a11y="false"
+              href="https://narative.co/design/open/fey"
+            >
+              <FigmaIcon aria-hidden="true" /> View in Figma
+            </LinkToProduct> */}
           </div>
         </>
       ),
@@ -90,97 +119,98 @@ function LabsPage({ data, location }) {
     //     </>
     //   ),
     // },
-    {
-      logo: FeyLogo,
-      background: feyBackground.childImageSharp.fluid,
-      backgroundColor: '#16171C',
-      excerpt:
-        'Sick of tracking your trades across Evernote, Excel files and countless screenshots? Fey gives you the complete picture of your portfolio, with fast data entry, always-on risk analysis and more.',
-      children: (
-        <>
-          <HorizontalRule />
-          <div>
-            <LinkToProduct
-              target="_blank"
-              data-a11y="false"
-              href="https://feyapp.com"
-            >
-              <GlobeIcon aria-hidden="true" />
-              Visit website
-            </LinkToProduct>
-            <LinkToProduct
-              target="_blank"
-              data-a11y="false"
-              href="https://narative.co/design/open/fey"
-            >
-              <FigmaIcon aria-hidden="true" /> View in Figma
-            </LinkToProduct>
-          </div>
-        </>
-      ),
-    },
-    {
-      logo: CommandlineLogo,
-      background: commandlineBackground.childImageSharp.fluid,
-      backgroundColor: '#222838',
-      excerpt:
-        'Computers have plenty of buttons, so we wondered: why explore the web with just one? Narative Command lets you instantly access any page on Narative.co with simple keyboard shortcuts.',
-      children: (
-        <>
-          <HorizontalRule />
-          <LinkToProduct dark as="div">
-            Try it out! Just press <Symbol>{keyToSymbol('meta')}</Symbol>{' '}
-            <Symbol>K</Symbol>
-          </LinkToProduct>
-        </>
-      ),
-    },
-    {
-      logo: NovelaLogo,
-      background: novelaBackground.childImageSharp.fluid,
-      backgroundColor: '#a8cee8',
-      excerpt:
-        'With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to publish beautiful articles and stories with Gatsby.',
-      children: (
-        <>
-          <HorizontalRule dark />
-          <div>
-            <LinkToProduct
-              as={Link}
-              to="/labs/novela"
-              style={{ color: '#08080B' }}
-            >
-              <EyeIcon aria-hidden="true" fill="#08080B" />
-              Preview
-            </LinkToProduct>
-            <LinkToProduct
-              target="_blank"
-              data-a11y="false"
-              href="https://narative.co/design/open/novela"
-              style={{ color: '#08080B' }}
-            >
-              <FigmaIcon aria-hidden="true" fill="#08080B" /> View in Figma
-            </LinkToProduct>
-          </div>
-        </>
-      ),
-    },
-    {
-      logo: MemoirLogo,
-      background: memoirBackground.childImageSharp.fluid,
-      backgroundColor: '#D4D7DB',
-      excerpt:
-        'Memoir is a Gatsby theme that puts your writing first. Designed to be beautiful without adding a single image, it includes all the features of our other theme Novela, like dark mode and social sharing.',
-      children: (
-        <>
-          <HorizontalRule dark />
-          <LinkToProduct dark as="div">
-            Coming soon
-          </LinkToProduct>
-        </>
-      ),
-    },
-  ].reverse()
+    // {
+    //   logo: FeyLogo,
+    //   background: feyBackground.childImageSharp.fluid,
+    //   backgroundColor: '#16171C',
+    //   excerpt:
+    //     'Sick of tracking your trades across Evernote, Excel files and countless screenshots? Fey gives you the complete picture of your portfolio, with fast data entry, always-on risk analysis and more.',
+    //   children: (
+    //     <>
+    //       <HorizontalRule />
+    //       <div>
+    //         <LinkToProduct
+    //           target="_blank"
+    //           data-a11y="false"
+    //           href="https://feyapp.com"
+    //         >
+    //           <GlobeIcon aria-hidden="true" />
+    //           Visit website
+    //         </LinkToProduct>
+    //         <LinkToProduct
+    //           target="_blank"
+    //           data-a11y="false"
+    //           href="https://narative.co/design/open/fey"
+    //         >
+    //           <FigmaIcon aria-hidden="true" /> View in Figma
+    //         </LinkToProduct>
+    //       </div>
+    //     </>
+    //   ),
+    // },
+    // {
+    //   logo: CommandlineLogo,
+    //   background: commandlineBackground.childImageSharp.fluid,
+    //   backgroundColor: '#222838',
+    //   excerpt:
+    //     'Computers have plenty of buttons, so we wondered: why explore the web with just one? Narative Command lets you instantly access any page on Narative.co with simple keyboard shortcuts.',
+    //   children: (
+    //     <>
+    //       <HorizontalRule />
+    //       <LinkToProduct dark as="div">
+    //         Try it out! Just press <Symbol>{keyToSymbol('meta')}</Symbol>{' '}
+    //         <Symbol>K</Symbol>
+    //       </LinkToProduct>
+    //     </>
+    //   ),
+    // },
+    // {
+    //   logo: NovelaLogo,
+    //   background: novelaBackground.childImageSharp.fluid,
+    //   backgroundColor: '#a8cee8',
+    //   excerpt:
+    //     'With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to publish beautiful articles and stories with Gatsby.',
+    //   children: (
+    //     <>
+    //       <HorizontalRule dark />
+    //       <div>
+    //         <LinkToProduct
+    //           as={Link}
+    //           to="/labs/novela"
+    //           style={{ color: '#08080B' }}
+    //         >
+    //           <EyeIcon aria-hidden="true" fill="#08080B" />
+    //           Preview
+    //         </LinkToProduct>
+    //         <LinkToProduct
+    //           target="_blank"
+    //           data-a11y="false"
+    //           href="https://narative.co/design/open/novela"
+    //           style={{ color: '#08080B' }}
+    //         >
+    //           <FigmaIcon aria-hidden="true" fill="#08080B" /> View in Figma
+    //         </LinkToProduct>
+    //       </div>
+    //     </>
+    //   ),
+    // },
+    // {
+    //   logo: MemoirLogo,
+    //   background: memoirBackground.childImageSharp.fluid,
+    //   backgroundColor: '#D4D7DB',
+    //   excerpt:
+    //     'Memoir is a Gatsby theme that puts your writing first. Designed to be beautiful without adding a single image, it includes all the features of our other theme Novela, like dark mode and social sharing.',
+    //   children: (
+    //     <>
+    //       <HorizontalRule dark />
+    //       <LinkToProduct dark as="div">
+    //         Coming soon
+    //       </LinkToProduct>
+    //     </>
+    //   ),
+    // },
+  ]
+  // ].reverse()
 
   return (
     <Layout nav={navConfig} background={pageBackground} footer={footerConfig}>
@@ -199,12 +229,14 @@ function LabsPage({ data, location }) {
                 <TextContainer>
                   <Pill text="Labs" />
                   <Heading.h2 styles="h1">
-                    Whether with our clients or all by ourselves, we’re always
-                    busy building something new.
+                    Creation is our nature. Whether we're working with clients
+                    or creating innovative apps and sites for ourselves, we're
+                    always moving forward into the brightest future we can
+                    conceive
                   </Heading.h2>
                   <MainText>
-                    Take a peek at the products we’re creating in-house at
-                    Narative.
+                    We'd like you to take a look into some of the products we
+                    are working on and have created in-house...
                   </MainText>
                 </TextContainer>
               </Transitions.CSS.FadeIn>
