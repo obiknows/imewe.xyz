@@ -72,7 +72,7 @@ function AboutPage({ location }) {
         <AboutPhotographs />
       </MiddleGradient>
       <BottomGradient>
-        <AboutTestimonial />
+        {/* <AboutTestimonial /> */}
         {/* <AboutStudioLabs /> */}
         <AboutContact />
       </BottomGradient>

@@ -337,7 +337,7 @@ function AboutTeam() {
             </Text>
           </TextContainer>
         </AboutRow>
-        {isDesktop ? (
+        {/* {isDesktop ? (
           <Sticky
             cover
             height="3300px"
@@ -434,7 +434,7 @@ function AboutTeam() {
               )
             })}
           </Section>
-        )}
+        )} */}
         {/* <AboutBackground /> */}
       </AboutTeamContainer>
 

@@ -176,9 +176,25 @@ function AboutPhotographs() {
             return (
               <ImageSection ref={containerRef}>
                 <LightSection>
-                  <AboutHeading
+                  {/* <AboutHeading
                     heading={`<span class="${headingClass}">Going the distance</span>`}
                     text={`<span class="${textClass}">Narative is a remote team, meaning we’re used to working together from often very far apart. We stay close through constant, transparent communication, both within our team and with each of our clients. And when it matters most, we make sure to all get together.</span>`}
+                  /> */}
+                  <AboutHeading
+                    heading={`<span class="${headingClass}">Marketing and Research</span>`}
+                    text={`<span class="${textClass}">Our Marketing Team has over 15 years of experience in developing systems that both connect and interact with customers, to provide the
+most successful consumer solutions. We fully immerse ourselves into every situation to form a unique bond with the companies that depend
+on our skills in order to forge a new and refined digital identity. <br/><br/> Re-inventing and revolutionizing the way you connect with your
+future clients, and solidifying the relations you have with your current clients is our specialty. We believe that a "strong network is
+a strong net worth", and we strive to promote both.</span>`}
+                  />
+                  <Spacer />
+
+                  <AboutHeading
+                    heading="<span>Design and<br /> development</span>"
+                    text={`<span>Our passionate team of designers and developers work day in and day out to create unique products, assuring that we offer the most
+innovative and attractive results.<span style="color:#73737D">We believe in immersing ourselves into every project until we successfully achieve our goal of consumer
+satisfaction, both for the companies we work for and their customers. We boast a tireless dedication to our craft and we love what we do.</span></span>`}
                   />
                   <Spacer />
                   {/* <ImageGrid style={{ transform: `scale(${firstRowScale})` }}>

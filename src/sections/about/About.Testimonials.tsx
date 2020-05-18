@@ -99,9 +99,15 @@ function AboutTestimonial() {
               <AboutTestimonialContainer>
                 <HeadingLineBreak>
                   <AboutHeading
+                    heading="<span>Design and<br /> development</span>"
+                    text={`<span${textStyles}>Our passionate team of designers and developers work day in and day out to create unique products, assuring that we offer the most
+innovative and attractive results.<span style="color:#73737D">We believe in immersing ourselves into every project until we successfully achieve our goal of consumer
+satisfaction, both for the companies we work for and their customers. We boast a tireless dedication to our craft and we love what we do.</span></span>`}
+                  />
+                  {/* <AboutHeading
                     heading="<span>Independent,<br /> but never alone</span>"
                     text={`<span${textStyles}>While we like to do things our own way, nobody can do it all by themselves. <span style="color:#73737D">Narative believes in building ongoing partnerships based on trust, and in contributing our ideas and work to the open source community. When we do honest work, good word spreads, and we can all build ever-greater things.</span></span>`}
-                  />
+                  /> */}
                 </HeadingLineBreak>
                 <Section narrow>
                   <TestimonialCardContainer>
@@ -190,6 +196,10 @@ function AboutTestimonial() {
 
       <Mobile>
         <HeadingLineBreak>
+          {/* <AboutHeading
+            heading="Independent,<br /> but never alone"
+            text={`While we like to do things our own way, nobody can do it all by themselves. <span style="color:#73737D">Narative believes in building ongoing partnerships based on trust, and in contributing our ideas and work to the open source community. When we do honest work, good word spreads, and we can all build ever-greater things.</span></span>`}
+          /> */}
           <AboutHeading
             heading="Independent,<br /> but never alone"
             text={`While we like to do things our own way, nobody can do it all by themselves. <span style="color:#73737D">Narative believes in building ongoing partnerships based on trust, and in contributing our ideas and work to the open source community. When we do honest work, good word spreads, and we can all build ever-greater things.</span></span>`}
