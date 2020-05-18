@@ -70,9 +70,10 @@ function HomeServicesMobile() {
           <Frame>
             <Section narrow>
               <CardHeading>
-                Narative helps you <Highlight active={first}>brand</Highlight>,{' '}
-                <Highlight active={second}>build</Highlight> and{' '}
-                <Highlight active={third}>grow</Highlight>
+                Digital Real Estate helps you <Highlight active={first}>dream</Highlight>,{' '}
+                {/* Narative helps you <Highlight active={first}>brand</Highlight>,{' '} */}
+                <Highlight active={second}>design</Highlight> and{' '}
+                <Highlight active={third}>develop</Highlight>
               </CardHeading>
               <HorizontalScroll
                 list={services}

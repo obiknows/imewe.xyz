@@ -28,12 +28,11 @@ function HomeHero() {
                 <TextContainer>
                   <Transitions.CSS.FadeIn>
                     <Heading.h1>
-                      Narative brands, builds and markets products on behalf of
-                      growth-minded companies.
+                      Welcome to the Digital Real Estate. Our name says exactly what we represent at our core.
                     </Heading.h1>
                     <MainText>
                       We’re a team with senior startup experience here to help
-                      your business take the next step.
+                      you build your business in the digital realm.
                     </MainText>
                     <ButtonArrow onClick={toggleContact} text="Get in touch" />
                   </Transitions.CSS.FadeIn>

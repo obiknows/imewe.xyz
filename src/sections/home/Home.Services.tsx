@@ -242,7 +242,7 @@ function HomeServices() {
                     style={calcOpacity(entering, boundingClientRect.top)}
                   >
                     <LargeHeading ref={heading}>
-                      Narative helps you brand, build and grow.
+                      Digital Real Estate helps you dream, design and develop.
                     </LargeHeading>
                   </HeadingBackground>
                 </animated.div>
@@ -291,11 +291,11 @@ function HomeServices() {
                 </ImageSlides>
                 <Column>
                   <Value id="grid-value" active={firstActive}>
-                    <Heading.h2>Brand</Heading.h2>
+                    <Heading.h2>DREAM</Heading.h2>
                     <List>
-                      <ListItem>Visual identity</ListItem>
-                      <ListItem>Strategic messaging</ListItem>
-                      <ListItem>Customer journeys</ListItem>
+                      <ListItem>Digital Identity</ListItem>
+                      <ListItem>Consumer Goals</ListItem>
+                      <ListItem>Business Possibilities</ListItem>
                     </List>
                     <StyledLink
                       onClick={toggleContact}
@@ -308,11 +308,11 @@ function HomeServices() {
                   </Value>
                   <Value active={secondActive}>
                     <Transform active={secondActive || thirdActive}>
-                      <Heading.h2>Build</Heading.h2>
+                      <Heading.h2>DESIGN</Heading.h2>
                       <List>
-                        <ListItem>Responsive websites</ListItem>
-                        <ListItem>Content management systems</ListItem>
-                        <ListItem>Cross-platform apps</ListItem>
+                        <ListItem>Mobile Apps</ListItem>
+                        <ListItem>Interactive Websites</ListItem>
+                        <ListItem>Successful Strategy</ListItem>
                       </List>
                     </Transform>
                     <StyledLink
@@ -325,11 +325,11 @@ function HomeServices() {
                   </Value>
                   <Value active={thirdActive}>
                     <Transform active={thirdActive}>
-                      <Heading.h2>Grow</Heading.h2>
+                      <Heading.h2>DEVELOP</Heading.h2>
                       <List>
-                        <ListItem>Content strategy</ListItem>
-                        <ListItem>Conversion optimization</ListItem>
-                        <ListItem>Nurturing and onboarding</ListItem>
+                        <ListItem>Digital Presence</ListItem>
+                        <ListItem>Online Content</ListItem>
+                        <ListItem>Higher Consumer Availability</ListItem>
                       </List>
                     </Transform>
                     <StyledLink

@@ -10,19 +10,34 @@ import Image from '@components/Image'
 import media from '@styles/media'
 
 const aboutNarativeText = [
-  `Even the most brilliant companies hit points where their focus is
-  spread thin by the many challenges that growing businesses face,
-  blocking them from reaching their full potential. That’s where we
-  come in.`,
-  `Narative brings focus through the lens of a team that’s faced it
-  all before, at scrappy startups and established enterprises alike.
-  That’s why we don’t do big pitches or presentations — it’s just
-  not in our DNA.`,
-  `Instead, we take the time to understand what drives your company
-  and customers as if they were our own, uncovering every problem
-  and opportunity along the way.
-  <strong>Then we get straight to work</strong>.`,
+  `As you may already know, in the world of business, location is <strong>everything</strong>. Real estate matters.
+When customers download your app they are giving you a valuable piece of real estate on their mobile device,
+this approach has a greater impact on consumers than social media ads and email marketing- it's direct
+marketing. With a mobile app, customers will see your logo several times a day and this will establish a visual
+connection.`,
+  `Our team of professionals specialize in creating and developing "Digital Real Estate" for new companies
+and older businesses that are looking to re-invent their digital presence. Entities with mobile apps and
+mobile-friendly websites make a better impression than those without. Having a readily available
+digital presence will keep you ahead of the competition.`,
+  `Whether you are a business, a blogger, a YouTuber, or a celebrity owning a piece of <strong>YOUR OWN</strong> digital real estate
+is imperative to future online success. Facebook, Instagram, YouTube etc. are all amazing tools to have, but at the
+end of the day that's all they are, just tools. You need a proper foundation and our team is capable of delivering
+just that.`,
 ]
+// const aboutNarativeText = [
+//   `Even the most brilliant companies hit points where their focus is
+//   spread thin by the many challenges that growing businesses face,
+//   blocking them from reaching their full potential. That’s where we
+//   come in.`,
+//   `Narative brings focus through the lens of a team that’s faced it
+//   all before, at scrappy startups and established enterprises alike.
+//   That’s why we don’t do big pitches or presentations — it’s just
+//   not in our DNA.`,
+//   `Instead, we take the time to understand what drives your company
+//   and customers as if they were our own, uncovering every problem
+//   and opportunity along the way.
+//   <strong>Then we get straight to work</strong>.`,
+// ]
 
 const imageQuery = graphql`
   query ShapeImageQuery {
@@ -63,7 +78,9 @@ const HomeAbout = () => {
             top={140}
             height="682px"
             disableOnMobile
-            render={() => <AboutHeading>The Narative Approach</AboutHeading>}
+            render={() => (
+              <AboutHeading>The Digital Real Estate Way</AboutHeading>
+            )}
           />
           <div>
             {aboutNarativeText.map((text, index) => (
