@@ -1,11 +1,11 @@
 {
-  "name": "imewe.xyz",
-  "description": "IMEWE's site - forked from Narative's website",
+  "name": "digitalrealestate.co",
+  "description": "Digital Real Estate's site - forked from Narative's website",
   "version": "1.0.0",
   "keywords": [
-    "imewe",
-    "xyz",
-    "website"
+    "digtal",
+    "real",
+    "estate"
   ],
   "scripts": {
     "start": "run-p start:**",

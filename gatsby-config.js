@@ -3,8 +3,8 @@ require('dotenv').config()
 const proxy = require('http-proxy-middleware')
 
 exports.siteMetadata = {
-  title: 'IMEWE',
-  siteUrl: 'https://imewe.xyz',
+  title: 'Digital Real Estate',
+  siteUrl: 'https://digitalrealestate.co',
   pathPrefix: `/`,
 }
 
@@ -44,8 +44,8 @@ exports.plugins = [
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      name: 'IMEWE',
-      short_name: 'IMEWE',
+      name: 'Digital Real Estate',
+      short_name: 'DRE',
       start_url: '/',
       background_color: '#111216',
       theme_color: '#111216',
@@ -56,19 +56,21 @@ exports.plugins = [
   {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
-      host: 'https://imewe.xyz',
-      sitemap: 'https://imewe.xyz/sitemap.xml',
+      host: 'https://digitalrealestate.co',
+      sitemap: 'https://digitalrealestate.co/sitemap.xml',
       policy: [
         { userAgent: '*', disallow: ['/.netlify/', '/articles/preview/'] },
       ],
     },
   },
+  // TODO: update Google Analytics Pixel
   {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
       trackingId: 'UA-118232427-1',
     },
   },
+  // TODO: update Facebook Pixel
   {
     resolve: `gatsby-plugin-facebook-pixel`,
     options: {

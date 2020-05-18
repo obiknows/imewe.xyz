@@ -64,7 +64,7 @@ function AboutPage({ location }) {
 
       <AboutHero />
       <TeamGradient>
-        {/* <AboutTeam /> */}
+        <AboutTeam />
         <Divider />
       </TeamGradient>
       <MiddleGradient>

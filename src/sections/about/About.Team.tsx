@@ -323,16 +323,17 @@ function AboutTeam() {
   return (
     <>
       <AboutTeamContainer>
-        <AboutRow header="The team">
+        <AboutRow header="Our Team">
           <TextContainer>
             <Text>
-              One thing we’ve learned from our years within growing startups is
-              that throwing more people at a problem rarely hastens solving it.
+              Our team functions as a cohesive unit of thinkers and creators.
+              Together we create marvelous realities in the digital
+              world.
             </Text>
             <Text>
-              We keep our team intentionally small, bringing on only those with
-              the skills, experience and enthusiasm required to create real
-              impact — both for our business, and for yours.
+              We are loyal and dedicated to each other, our clients, and our
+              projects. We understand the concept that there is NO I in TEAM,
+              use this to create a real impact on our work.
             </Text>
           </TextContainer>
         </AboutRow>
@@ -434,7 +435,7 @@ function AboutTeam() {
             })}
           </Section>
         )}
-        <AboutBackground />
+        {/* <AboutBackground /> */}
       </AboutTeamContainer>
 
       {/* 

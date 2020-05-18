@@ -49,12 +49,16 @@ function AboutHero() {
                       <TextContainer>
                         <Pill text="About" />
                         <Heading.h2 styles="h1">
-                          Narative is a tight-knit team with senior experience
-                          in every digital discipline.
+                          Digital Real Estate is a fresh new company with a
+                          brand new perspective on digital media, the internet,
+                          its function in the times we live in today.
                         </Heading.h2>
                         <MainText>
-                          We partner with companies to bring products to life,
-                          and businesses to scale.
+                          {/* We partner with companies to bring products to life,
+                          and businesses to scale. */}
+
+                          We offer the senior experience of a tight knit development team. We thrive when working with clients to bring their digital presence
+to life in a new and exciting way.
                         </MainText>
                       </TextContainer>
                     </Transitions.CSS.FadeIn>
@@ -86,9 +90,9 @@ function AboutHero() {
           */}
           <MobileSection hideOnDesktop relative>
             <ImageContainer>
-              <HeroImageTop>
+              {/* <HeroImageTop>
                 <Image src={heroTop.childImageSharp.fluid} />
-              </HeroImageTop>
+              </HeroImageTop> */}
               <HeroImageBottom>
                 <Image
                   src={heroBottom.childImageSharp.fluid}

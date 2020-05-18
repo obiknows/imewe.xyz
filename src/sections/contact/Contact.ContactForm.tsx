@@ -20,7 +20,7 @@ const validate = values => {
   let errors = {}
 
   if (!values.name) {
-    errors.name = 'Hi, we’re Narative. What’s your name?'
+    errors.name = 'Hi, we’re Digital Real Estate. What’s your name?'
   }
 
   if (!values.email) {
@@ -82,7 +82,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
           <SubmittedCheckIcon />
           <SubmittedHeader>Thank you, {firstName}</SubmittedHeader>
           <SubmittedText>
-            A member of the Narative team will be in touch with you soon.
+            A member of the Digital Real Estate team will be in touch with you soon.
           </SubmittedText>
           <SubmittedBackButton onClick={toggleContact}>
             Go back
@@ -91,7 +91,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
             <SocialLinks fill="black" />
           </SocialLinksContainer>
           <CopyRightContainer>
-            © {new Date().getFullYear()} Narative Studio Inc.
+            © {new Date().getFullYear()} Digital Real Estate Co.
           </CopyRightContainer>
         </SubmittedScreen>
       ) : (
@@ -175,13 +175,13 @@ const ContactByEmail = ({ animation, delay }) => (
     <ContactWithEmail animation={animation} delay={delay}>
       <ContactWithEmailText>
         <CopyToClipboard
-          copyOnClick="careers@narative.co"
+          copyOnClick="info@digitalrealestate.co"
           iconFill="rgba(0,0,0,0.3)"
         >
-          Looking to be part of Narative? Say hello at{' '}
+          Looking to be part of Digital Real Estate? Say hello at{' '}
           <button>
             careers@narative.co{' '}
-            <Hidden>Copy careers@narative.co go clipboard.</Hidden>
+            <Hidden>Copy info@digitalrealestate.co go clipboard.</Hidden>
           </button>
         </CopyToClipboard>
       </ContactWithEmailText>
@@ -191,8 +191,8 @@ const ContactByEmail = ({ animation, delay }) => (
       animation={animation}
       delay={delay}
     >
-      Looking to be part of Narative? <br />
-      Say hello at <span>careers@narative.co</span>
+      Looking to be part of Digital Real Estate? <br />
+      Say hello at <span>info@digitalrealestate.co</span>
     </MobileContactWithEmail>
   </>
 )
