@@ -28,7 +28,7 @@ function HomeHero() {
                 <TextContainer>
                   <Transitions.CSS.FadeIn>
                     <Heading.h1>
-                      Welcome to the Digital Real Estate. Our name says exactly what we represent at our core.
+                      Welcome to Digital Real Estate. Our name says exactly what we represent at our core.
                     </Heading.h1>
                     <MainText>
                       We’re a team with senior startup experience here to help

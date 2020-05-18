@@ -15,7 +15,7 @@ import shortcuts, { constants } from '@shortcuts'
 const ctaLinks = [
   { to: '/about', text: 'About' },
   { to: '/labs', text: 'Labs' },
-  { to: '/articles', text: 'Articles' },
+  // { to: '/articles', text: 'Articles' },
   { to: '/contact', text: 'Contact' },
 ]
 

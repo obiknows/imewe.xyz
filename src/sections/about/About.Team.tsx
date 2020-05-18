@@ -327,13 +327,12 @@ function AboutTeam() {
           <TextContainer>
             <Text>
               Our team functions as a cohesive unit of thinkers and creators.
-              Together we create marvelous realities in the digital
-              world.
+              Together we create marvelous realities in the digital world.
             </Text>
             <Text>
               We are loyal and dedicated to each other, our clients, and our
               projects. We understand the concept that there is NO I in TEAM,
-              use this to create a real impact on our work.
+              we use this to create a real impact on our work.
             </Text>
           </TextContainer>
         </AboutRow>

@@ -133,7 +133,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
                   </span>
                 </FormSection>
                 <FormSection animation={animation} delay={baseDelay + 480}>
-                  <FormHeader>What’s on your mind?</FormHeader>
+                  <FormHeader>What’s on your mind?</FormHeader>
                   <Field
                     component={Form.Textarea}
                     label="let us know what you’d like to discuss"

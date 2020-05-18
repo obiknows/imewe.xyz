@@ -20,8 +20,8 @@ and older businesses that are looking to re-invent their digital presence. Entit
 mobile-friendly websites make a better impression than those without. Having a readily available
 digital presence will keep you ahead of the competition.`,
   `Whether you are a business, a blogger, a YouTuber, or a celebrity owning a piece of <strong>YOUR OWN</strong> digital real estate
-is imperative to future online success. Facebook, Instagram, YouTube etc. are all amazing tools to have, but at the
-end of the day that's all they are, just tools. You need a proper foundation and our team is capable of delivering
+is imperative to future online success. Social Media is an amazing tools to have, but at the
+end of the day that's all it is, a tool. You need a proper foundation and our team is capable of delivering
 just that.`,
 ]
 // const aboutNarativeText = [

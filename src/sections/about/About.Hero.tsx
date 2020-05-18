@@ -50,7 +50,7 @@ function AboutHero() {
                         <Pill text="About" />
                         <Heading.h2 styles="h1">
                           Digital Real Estate is a fresh new company with a
-                          brand new perspective on digital media, the internet,
+                          brand new perspective on digital media, the internet, and
                           its function in the times we live in today.
                         </Heading.h2>
                         <MainText>
