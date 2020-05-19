@@ -52,6 +52,10 @@ const Card = styled.div`
     opacity: 1;
   }
 
+  ${media.desktop_small`
+    display: none;
+  `}
+
   ${media.tablet`
     display: none;
   `}
@@ -86,7 +90,7 @@ const Excerpt = styled.p`
 const ImageContainer = styled.div`
   position: absolute;
   height: 100%;
-  width: 69%;
+  width: 50%;
   top: 0;
   right: 0;
   pointer-events: none;

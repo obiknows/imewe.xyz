@@ -33,6 +33,8 @@ function LabsPage({ data, location }) {
     needlBackground,
     memoirBackground,
     feyBackground,
+    odeeBackground,
+    ourSoulAgendaBackground,
     novelaBackground,
     commandlineBackground,
   } = data
@@ -55,10 +57,11 @@ function LabsPage({ data, location }) {
   const products = [
     {
       logo: ODEELogo,
-      background: needlBackground.childImageSharp.fluid,
+      background: odeeBackground.childImageSharp.fluid.src,
       backgroundColor: '#060608',
       excerpt:
-        "Whether you're looking to get inked or you're a tattoo artist yourself, this upcoming app will help you get what you need. Find artists and styles, schedule appointments, book flashes and get paid.",
+        "This up and coming streetwear brand dedicated asked us to design their products, webstore, growth strategy dedicated to the brands' message of pushing its members to Overcome Doubt and Excel Endlessly.",
+        // "Whether you're looking to get inked or you're a tattoo artist yourself, this upcoming app will help you get what you need. Find artists and styles, schedule appointments, book flashes and get paid.",
       children: (
         <>
           <HorizontalRule />
@@ -77,11 +80,10 @@ function LabsPage({ data, location }) {
     },
     {
       logo: OSALogo,
-      // logo: FeyLogo,
-      background: feyBackground.childImageSharp.fluid,
+      background: ourSoulAgendaBackground.childImageSharp.fluid.src,
       backgroundColor: '#16171C',
       excerpt:
-        'Sick of tracking your trades across Evernote, Excel files and countless screenshots? Fey gives you the complete picture of your portfolio, with fast data entry, always-on risk analysis and more.',
+        "We designed a website complete with: a blog space, donation capabilities, an online store, and affliate link section for these YouTubers dedicated to helping others to live out our soul's purpose.",
       children: (
         <>
           <HorizontalRule />
@@ -325,6 +327,20 @@ export const pageQuery = graphql`
         }
       }
     }
+    odeeBackground: file(name: { regex: "/labs-odee-desktop/" }) {
+      childImageSharp {
+        fluid(maxWidth: 793, maxHeight: 381, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    ourSoulAgendaBackground: file(name: { regex: "/labs-osa-desktop/" }) {
+      childImageSharp {
+        fluid(maxWidth: 793, maxHeight: 381, quality: 100) {
+          src
+        }
+      }
+    }
     feyBackground: file(name: { regex: "/labs-fey-desktop/" }) {
       childImageSharp {
         fluid(maxWidth: 793, maxHeight: 381, quality: 100) {
@@ -385,6 +401,14 @@ const HeroImage = styled.div`
     }
   }
 
+  ${media.desktop`
+    display: none;
+  `};
+  
+  ${media.desktop_small`
+    display: none;
+  `};
+
   ${media.tablet`
     display: none;
   `};
@@ -402,7 +426,7 @@ const HeroImageMobile = styled(HeroImage)`
 
   ${media.tablet`
     box-shadow: 0px -40px 40px rgba(8, 7, 11, 0.8);
-    display: block;
+    display: none;
     width: 100%;
     top: 0;
     right: 0;
