@@ -2,8 +2,8 @@ import React from 'react'
 
 export const DribbbleIcon = ({ fill = 'white' }) => (
   <svg
-    width="15"
-    height="14"
+    width="30"
+    height="28"
     viewBox="0 0 15 14"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +17,8 @@ export const DribbbleIcon = ({ fill = 'white' }) => (
 
 export const InstagramIcon = ({ fill = 'white' }) => (
   <svg
-    width="13"
-    height="13"
+    width="26"
+    height="26"
     viewBox="0 0 13 13"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +46,8 @@ export const InstagramIcon = ({ fill = 'white' }) => (
 
 export const TwitterIcon = ({ fill = 'white' }) => (
   <svg
-    width="16"
-    height="13"
+    width="32"
+    height="26"
     viewBox="0 0 16 13"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +63,8 @@ export const TwitterIcon = ({ fill = 'white' }) => (
 
 export const LinkedInIcon = ({ fill = 'white' }) => (
   <svg
-    width="15"
-    height="15"
+    width="30"
+    height="30"
     viewBox="0 0 14 14"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +84,8 @@ export const GithubIcon = ({ fill = 'white' }) => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="15"
-    height="15"
+    width="30"
+    height="30"
     viewBox="0 0 438.549 438.549"
   >
     <path

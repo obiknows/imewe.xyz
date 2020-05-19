@@ -48,7 +48,7 @@ function AboutHero() {
                     <Transitions.CSS.FadeIn>
                       <TextContainer>
                         <Pill text="About" />
-                        <Heading.h2 styles="h1">
+                        <Heading.h2 styles="h1" style={{fontSize: '2.88rem'}}>
                           Digital Real Estate is a fresh new company with a
                           brand new perspective on digital media, the internet, and
                           its function in the times we live in today.
@@ -161,7 +161,7 @@ const TextContainer = styled.div`
 `
 
 const MainText = styled.p`
-  font-size: 3.2rem;
+  font-size: 2.88rem;
   font-weight: 400;
   color: ${p => p.theme.colors.grey};
   line-height: 1.3;

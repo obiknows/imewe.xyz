@@ -231,7 +231,7 @@ function LabsPage({ data, location }) {
               <Transitions.CSS.FadeIn>
                 <TextContainer>
                   <Pill text="Labs" />
-                  <Heading.h2 styles="h1">
+                  <Heading.h2 styles="h1" style={{fontSize: '2.88rem'}}>
                     Creation is our nature. Whether we're working with clients
                     or creating innovative apps and sites for ourselves, we're
                     always moving forward into the brightest future we can
@@ -388,6 +388,7 @@ const HeroImage = styled.div`
   top: -180px;
   right: -40px;
   animation: float 4.8s ease-in-out infinite 1.4s;
+  margin-top: 12.5vh;
 
   @keyframes float {
     0% {
@@ -451,7 +452,7 @@ const TextContainer = styled.div`
 `
 
 const MainText = styled.p`
-  font-size: 3.2rem;
+  font-size: 2.88rem;
   font-weight: 400;
   color: ${p => p.theme.colors.grey};
   line-height: 1.3;

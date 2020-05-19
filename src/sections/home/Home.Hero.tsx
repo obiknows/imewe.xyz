@@ -27,7 +27,7 @@ function HomeHero() {
               >
                 <TextContainer>
                   <Transitions.CSS.FadeIn>
-                    <Heading.h1>
+                    <Heading.h1 style={{fontSize:'2.88rem'}}>
                       Welcome to Digital Real Estate. Our name says exactly what we represent at our core.
                     </Heading.h1>
                     <MainText>
@@ -71,7 +71,7 @@ const TextContainer = styled.div`
 `
 
 const MainText = styled.p`
-  font-size: 3.2rem;
+  font-size: 2.88rem;
   font-weight: 400;
   color: ${p => p.theme.colors.grey};
   line-height: 1.3;

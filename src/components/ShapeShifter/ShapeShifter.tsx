@@ -641,6 +641,9 @@ const Frame = styled.div`
   border-color: ${p => (p.animate ? '#6166dc' : 'transparent')};
   opacity: 0.001;
   transform: scale(1.2);
+
+  margin-top: 5vh;
+
   animation: ${scaleIn} 3.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s forwards,
     ${fadeIn} 3s 0.3s forwards;
 

@@ -43,7 +43,8 @@ const constants = {
     lineheightMobile: 1.4,
   },
   h2: {
-    fontsize: '3.2rem',
+    // fontsize: '3.2rem',
+    fontsize: '2.88rem',
     fontsizeMobile: '2.4rem',
     fontFamily: "'ff-meta-serif-web-pro', serif",
     lineheight: 1.2,

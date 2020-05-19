@@ -7,7 +7,7 @@ import media from '@styles/media'
 
 const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
   <Fragment>
-    <SocialIconContainer
+    {/* <SocialIconContainer
       target="_blank"
       rel="noopener"
       data-a11y="false"
@@ -15,8 +15,8 @@ const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
       href={settings.urls.twitter}
     >
       <SocialIcons.TwitterIcon fill={fill} />
-    </SocialIconContainer>
-    <SocialIconContainer
+    </SocialIconContainer> */}
+    {/* <SocialIconContainer
       target="_blank"
       rel="noopener"
       data-a11y="false"
@@ -24,7 +24,7 @@ const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
       href={settings.urls.dribbble}
     >
       <SocialIcons.DribbbleIcon fill={fill} />
-    </SocialIconContainer>
+    </SocialIconContainer> */}
     <SocialIconContainer
       target="_blank"
       rel="noopener"
@@ -34,7 +34,7 @@ const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
     >
       <SocialIcons.InstagramIcon fill={fill} />
     </SocialIconContainer>
-    <SocialIconContainer
+    {/* <SocialIconContainer
       target="_blank"
       rel="noopener"
       data-a11y="false"
@@ -42,7 +42,7 @@ const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
       href={settings.urls.linkedin}
     >
       <SocialIcons.LinkedInIcon fill={fill} />
-    </SocialIconContainer>
+    </SocialIconContainer> */}
   </Fragment>
 )
 
