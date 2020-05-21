@@ -37,7 +37,7 @@ interface HelmetProps {
   readingTime?: string
 }
 
-const seoURL = path => `https://narative.co${path}`
+const seoURL = path => `https://thedreco.com${path}`
 
 // Twitter requires https to prepend any paths.
 const addHttps = path => {
@@ -46,7 +46,7 @@ const addHttps = path => {
 }
 
 const seoDescription =
-  "Narative brings decades of design, marketing and engineering expertise directly to your team. We help you build the products you've always dreamed of, and the ones you're yet to dream up."
+  "Digital Real Estate brings decades of design, marketing and engineering expertise directly to your team. We help you build the products you've always dreamed of, and the ones you're yet to dream up."
 
 const getMetaTags = ({
   title,
@@ -80,10 +80,10 @@ const getMetaTags = ({
     { itemprop: 'image', content: addHttps(image) },
     { name: 'description', content: description },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:site', content: 'Narative' },
+    { name: 'twitter:site', content: 'Digital Real Estate' },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
-    { name: 'twitter:creator', content: twitter || 'Narative' },
+    { name: 'twitter:creator', content: twitter || 'Digital Real Estate' },
 
     {
       name: 'twitter:image',
@@ -94,7 +94,7 @@ const getMetaTags = ({
     { property: 'og:url', content: url },
     { property: 'og:image', content: image },
     { property: 'og:description', content: description },
-    { property: 'og:site_name', content: 'Narative' },
+    { property: 'og:site_name', content: 'Digital Real Estate' },
   ]
 
   if (published)
@@ -136,7 +136,7 @@ const SEO = ({
           rel: 'canonical',
           href: canonical
             ? canonical
-            : `https://www.narative.co/${pathname.replace(/^\/+/g, '')}`,
+            : `https://www.thedreco.com/${pathname.replace(/^\/+/g, '')}`,
         },
       ]}
       meta={getMetaTags({

@@ -16,7 +16,7 @@ export default props => (
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" />
       <script src={withPrefix('/scripts/MorphSVGPlugin.min.js')} />
       <script
-        dangerouslySetInnerHTML={{ __html: `document.domain = "narative.co"` }}
+        dangerouslySetInnerHTML={{ __html: `document.domain = "thedreco.com"` }}
       />
       {props.headComponents}
     </head>
