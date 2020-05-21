@@ -4,7 +4,7 @@ const proxy = require('http-proxy-middleware')
 
 exports.siteMetadata = {
   title: 'Digital Real Estate',
-  siteUrl: 'https://digitalrealestate.co',
+  siteUrl: 'https://thedreco.com',
   pathPrefix: `/`,
 }
 
@@ -56,8 +56,8 @@ exports.plugins = [
   {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
-      host: 'https://digitalrealestate.co',
-      sitemap: 'https://digitalrealestate.co/sitemap.xml',
+      host: 'https://thedreco.com',
+      sitemap: 'https://thedreco.com/sitemap.xml',
       policy: [
         { userAgent: '*', disallow: ['/.netlify/', '/articles/preview/'] },
       ],

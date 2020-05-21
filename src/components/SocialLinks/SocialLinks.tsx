@@ -25,7 +25,9 @@ const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
     >
       <SocialIcons.DribbbleIcon fill={fill} />
     </SocialIconContainer> */}
-    <SocialIconContainer
+
+    {/* IG LOGO */}
+    {/* <SocialIconContainer
       target="_blank"
       rel="noopener"
       data-a11y="false"
@@ -33,7 +35,9 @@ const SocialLinks = ({ fill = 'white' }: { fill: string }) => (
       href={settings.urls.instagram}
     >
       <SocialIcons.InstagramIcon fill={fill} />
-    </SocialIconContainer>
+    </SocialIconContainer> */}
+
+
     {/* <SocialIconContainer
       target="_blank"
       rel="noopener"

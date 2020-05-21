@@ -62,7 +62,7 @@ class PhoneForm extends Component {
                 <FormSection>
                   <Field
                     component={Form.Phone}
-                    label="123 456-7890"
+                    label="+1-323-553-3738"
                     name="phone"
                   />
                 </FormSection>

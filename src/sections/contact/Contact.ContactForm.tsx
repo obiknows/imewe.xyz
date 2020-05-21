@@ -106,7 +106,10 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
           }}
           render={props => {
             return (
-              <StyledFormikForm>
+              <StyledFormikForm
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
                 <FormSection
                   animation={animation}
                   delay={baseDelay + 350}
@@ -153,10 +156,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
                   animation={animation}
                   delay={baseDelay + 610}
                 >
-                  <Button
-                    isSubmitting={props.isSubmitting}
-                    text="Send"
-                  />
+                  <Button isSubmitting={props.isSubmitting} text="Send" />
                 </MobileButtonContainer>
                 <ContactByEmail animation={animation} delay={baseDelay + 610} />
               </StyledFormikForm>
@@ -175,13 +175,13 @@ const ContactByEmail = ({ animation, delay }) => (
     <ContactWithEmail animation={animation} delay={delay}>
       <ContactWithEmailText>
         <CopyToClipboard
-          copyOnClick="info@digitalrealestate.co"
+          copyOnClick="info@thedreco.com"
           iconFill="rgba(0,0,0,0.3)"
         >
           Looking to be part of Digital Real Estate? Say hello at{' '}
           <button>
-            info@digitalrealestate.co{' '}
-            <Hidden>Copy info@digitalrealestate.co go clipboard.</Hidden>
+            info@thedreco.com{' '}
+            <Hidden>Copy info@thedreco.com go clipboard.</Hidden>
           </button>
         </CopyToClipboard>
       </ContactWithEmailText>
@@ -192,7 +192,7 @@ const ContactByEmail = ({ animation, delay }) => (
       delay={delay}
     >
       Looking to be part of Digital Real Estate? <br />
-      Say hello at <span>info@digitalrealestate.co</span>
+      Say hello at <span>info@thedreco.com</span>
     </MobileContactWithEmail>
   </>
 )

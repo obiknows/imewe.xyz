@@ -181,7 +181,7 @@ function AboutPhotographs() {
                     text={`<span class="${textClass}">Narative is a remote team, meaning we’re used to working together from often very far apart. We stay close through constant, transparent communication, both within our team and with each of our clients. And when it matters most, we make sure to all get together.</span>`}
                   /> */}
                   <AboutHeading
-                    heading={`<span class="${headingClass}">Marketing and Research</span>`}
+                    heading={`<span class="${headingClass}">Marketing and Research <br /><span style="font-size:5rem">(D.L. Crawford)</span></span>`}
                     text={`<span class="${textClass}">Our Marketing Team has over 15 years of experience in developing systems that both connect and interact with customers, to provide the
 most successful consumer solutions. We fully immerse ourselves into every situation to form a unique bond with the companies that depend
 on our skills in order to forge a new and refined digital identity. <br/><br/> Re-inventing and revolutionizing the way you connect with your
@@ -191,8 +191,8 @@ a strong net worth", and we strive to promote both.</span>`}
                   <Spacer />
 
                   <AboutHeading
-                    heading="<span>Design and<br /> development</span>"
-                    text={`<span>Our passionate team of designers and developers work day in and day out to create unique products, assuring that we offer the most
+                    heading={`<span>Design and<br />Development <br /><span style="font-size:5rem">(Obinna Nnodim)</span></span>`}
+                    text={`<span>Our passionate team of designers and developers has 10+ years of experience working with all kinds of businesses: from budding startups to billion-dollar companies. We work day in and day out to create unique products, assuring that we offer the most
 innovative and attractive results.<span style="color:#73737D">We believe in immersing ourselves into every project until we successfully achieve our goal of consumer
 satisfaction, both for the companies we work for and their customers. We boast a tireless dedication to our craft and we love what we do.</span></span>`}
                   />
