@@ -65,4 +65,17 @@ const Frame = styled.div<{ background?: string }>`
       padding-top: 60px;
     }
   `}
+
+  ${media.tablet`
+    top: 40px;
+  `}
+  ${media.phablet`
+    top: 140px;
+  `}
+  ${media.phone`
+    top: 190px;
+  `}
+  ${media.phone_small`
+    top: 120px;
+  `}
 `
