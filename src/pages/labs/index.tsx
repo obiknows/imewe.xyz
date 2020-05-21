@@ -60,7 +60,7 @@ function LabsPage({ data, location }) {
       background: odeeBackground.childImageSharp.fluid.src,
       backgroundColor: '#060608',
       excerpt:
-        "This up and coming streetwear brand dedicated asked us to design their products, webstore, growth strategy dedicated to the brands' message of pushing its members to Overcome Doubt and Excel Endlessly.",
+        "This up and coming streetwear brand asked us to design their products, webstore, and growth strategy dedicated to the brands' message of pushing its members to Overcome Doubt and Excel Endlessly.",
         // "Whether you're looking to get inked or you're a tattoo artist yourself, this upcoming app will help you get what you need. Find artists and styles, schedule appointments, book flashes and get paid.",
       children: (
         <>
