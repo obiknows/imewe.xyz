@@ -18,34 +18,34 @@ import HomeServicesMobile from './Home.Services.Mobile'
 
 export const services = [
   {
-    heading: 'Brand',
-    list: ['Visual identity', 'Strategic messaging', 'Customer journeys'],
+    heading: 'Dream',
+    list: ['Digital Identity', 'Consumer Goals', 'Business Possibilities'],
     link: {
-      text: 'Let’s talk about your brand',
+      text: 'Let’s talk about your dream',
       to: '/contact',
     },
   },
   {
-    heading: 'Build',
+    heading: 'Design',
     list: [
-      'Responsive websites',
-      'Content management systems',
-      'Cross-platform apps',
+      'Mobile Apps',
+      'Interactive Websites',
+      'Successful Strategy',
     ],
     link: {
-      text: 'Let’s build something together',
+      text: 'Let’s design something together',
       to: '/contact',
     },
   },
   {
-    heading: 'Grow',
+    heading: 'Develop',
     list: [
-      'Content strategy',
-      'Conversion optimization',
-      'Nurturing and onboarding',
+      'Digital Presence',
+      'Online Content',
+      'Higher Consumer Availability',
     ],
     link: {
-      text: 'Let’s grow your business',
+      text: 'Let’s develop your idea',
       to: '/contact',
     },
   },
@@ -302,7 +302,7 @@ function HomeServices() {
                       active={firstActive}
                       tabIndex={firstActive ? 0 : -1}
                     >
-                      Let’s talk about your brand
+                      Let’s talk about your dream
                     </StyledLink>
                     <Progress style={progressStyles} />
                   </Value>
@@ -320,7 +320,7 @@ function HomeServices() {
                       active={secondActive}
                       tabIndex={secondActive ? 0 : -1}
                     >
-                      Let’s build something together
+                      Let’s design something together
                     </StyledLink>
                   </Value>
                   <Value active={thirdActive}>
@@ -337,7 +337,7 @@ function HomeServices() {
                       active={thirdActive}
                       tabIndex={thirdActive ? 0 : -1}
                     >
-                      Let’s grow your business
+                      Let’s develop your idea
                     </StyledLink>
                   </Value>
                 </Column>
