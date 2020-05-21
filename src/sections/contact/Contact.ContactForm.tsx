@@ -56,7 +56,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
     const { company, details, email, name } = values
 
     const method = 'post'
-    const endpoint = '/contact/proposal'
+    const endpoint = '/'
     const data = {
       company,
       email,
@@ -110,6 +110,7 @@ function ContactForm({ baseDelay }: { baseDelay: number }) {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="form-name" value="The DRE Co Contact Form" />
                 <FormSection
                   animation={animation}
                   delay={baseDelay + 350}
